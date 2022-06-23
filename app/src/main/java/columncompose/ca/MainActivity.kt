@@ -41,10 +41,10 @@ class MainActivity : ComponentActivity() {
                     horizontalAlignment = Alignment.End,
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    RoundedIcon(
+                    /*RoundedIcon(
                         Icons.Rounded.Face,
                         modifier = Modifier.align(Alignment.Start)
-                    )
+                    )*/
                     RoundedIcon(
                         Icons.Rounded.Face,
                         modifier = Modifier.align(Alignment.End)
@@ -58,10 +58,10 @@ class MainActivity : ComponentActivity() {
                     RoundedIcon(
                         Icons.Rounded.Clear
                     )
-                    RoundedIcon(
+                    /*RoundedIcon(
                         Icons.Rounded.Face,
                         modifier = Modifier.align(Alignment.Start)
-                    )
+                    )*/
                 }
             }
         }
