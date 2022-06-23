@@ -84,3 +84,39 @@ fun RoundedIcon(icon: ImageVector, modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    ColumnComposeTheme {
+        Column(
+            modifier = Modifier
+                .padding(16.dp)
+                .fillMaxSize(),
+            horizontalAlignment = Alignment.End,
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            RoundedIcon(
+                Icons.Rounded.Face,
+                modifier = Modifier.align(Alignment.Start)
+            )
+            RoundedIcon(
+                Icons.Rounded.Face,
+                modifier = Modifier.align(Alignment.End)
+            )
+            RoundedIcon(
+                Icons.Rounded.Call
+            )
+            RoundedIcon(
+                Icons.Rounded.Check
+            )
+            RoundedIcon(
+                Icons.Rounded.Clear
+            )
+            RoundedIcon(
+                Icons.Rounded.Face,
+                modifier = Modifier.align(Alignment.Start)
+            )
+        }
+    }
+}
